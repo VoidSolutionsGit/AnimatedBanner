@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Banner</title>
+</head>
+
+<body>
+    <style>
+        .full-width {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .cnt-row {
+            display: flex;
+            flex-direction: row;
+            padding: 0 3em;
+        }
+
+        .city-cnt {
+            display: flex;
+            flex-grow: 1;
+            padding: 0.5em;
+        }
+
+        .city {
+            font-size: 1.5em;
+            transform: scale(1);
+            animation: pulse 2s infinite;
+            color: #facc04;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .city div {
+            border-radius: 5px;
+            background: #002964;
+            padding: 0.25em 0.5em;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.9);
+            }
+
+            70% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0.9);
+            }
+        }
+    </style>
+    <div class="full-width cnt">
+        <div class="cnt-row">
+            <div class="city-cnt text-center">
+                <div class="city"></div>
+            </div>
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        Oslo
+                    </div>
+                </div>
+            </div>
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        Stockholm
+                    </div>
+                </div>
+            </div>
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        Helsinki
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cnt-row">
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        København
+                    </div>
+                </div>
+            </div>
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        Malmö
+                    </div>
+                </div>
+            </div>
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        Riga
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cnt-row">
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        London
+                    </div>
+                </div>
+            </div>
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        Amsterdam
+                    </div>
+                </div>
+            </div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+        </div>
+        <div class="cnt-row">
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        Düsseldorf
+                    </div>
+                </div>
+            </div>
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        Berlin
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cnt-row">
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        Praha
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cnt-row">
+            <div class="city-cnt"></div>
+            <div class="city-cnt"></div>
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        Zürich
+                    </div>
+                </div>
+            </div>
+            <div class="city-cnt text-center">
+                <div class="city">
+                    <div>
+                        Wien
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
